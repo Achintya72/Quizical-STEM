@@ -1,0 +1,12 @@
+.navbar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+.links {
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+}

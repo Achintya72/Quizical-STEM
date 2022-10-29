@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 15px;
+}
+.content h1{
+    color: white;
+}
+
+.set {
+    min-width: 300px;
+    display: inline-flex;
+    align-items: stretch;
+}
+
+.allSets {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.setType {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.setsForType {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.setDetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setDetails p {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+}

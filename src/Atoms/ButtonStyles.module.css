@@ -1,0 +1,55 @@
+.button {
+    padding: 16px 32px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.secondary {
+    border: double 3px transparent;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 13px 29px;
+    transition: background-image ease-out 100ms;
+}
+.secondary a{
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.secondarydark {
+    background-image: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0,1)), 
+                      linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+}
+.secondarydark:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                      linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+}
+
+.secondarylight {
+    background-image: linear-gradient(var(--color-white), var(--color-white)), 
+                      linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+}
+.secondarylight:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                      linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+}
+
+.primary {
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    transition: box-shadow ease-out 100ms;
+}
+
+.primarydark {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5);
+}
+.primarylight {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.primary:hover {
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
